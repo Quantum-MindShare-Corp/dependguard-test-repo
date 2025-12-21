@@ -1,0 +1,16 @@
+name: DependGuard Scan Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run DependGuard Action
+        uses: Quantum-MindShare-Corp/dependguard-action@main   # ← CHANGE THIS!
+        with:
+          server-url: http://localhost:3000
