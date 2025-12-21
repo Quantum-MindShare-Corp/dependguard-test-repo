@@ -14,4 +14,5 @@ jobs:
         uses: Quantum-MindShare-Corp/dependguard-action@main   # ← CHANGE THIS!
         with:
           server-url: http://localhost:3000
-          .
+
+          
